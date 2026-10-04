@@ -3,11 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      # args:
-      #   APP_VERSION: ${APP_VERSION}
     image: ${DOCKER_USER}/onpk-frontend:${APP_VERSION}
     container_name: onpk-frontend
     env_file:
       - .env
     ports:
-      - "2000:${PORT}"
+      - "${PORT}:${PORT}"
