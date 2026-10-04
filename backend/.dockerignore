@@ -1,0 +1,28 @@
+# Lokálne závislosti a cache
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Konfiguračné a lokálne súbory prostredia (Bezpečnosť)
+.env
+.env.*
+!.env.example
+
+# Git a verzovanie
+.git
+.gitignore
+.github
+
+# Docker skripty a dokumentácia
+Dockerfile*
+docker-compose*.yml
+README.md
+.dockerignore
+
+# Systémové a editorové súbory
+.DS_Store
+.vscode
+.idea
+*.swp
